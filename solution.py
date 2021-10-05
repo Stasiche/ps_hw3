@@ -31,9 +31,9 @@ def main():
     err = (N + 1/2) * np.sqrt(p/6)
     
     coef = diff / (p*(N-p))
-    
+
     with open('out.txt', 'w') as f:
-        f.writelines(f'{round_to_int(diff)} {round_to_int(err)} {np.round(coef,2)}')
+        f.writelines(f'{round_to_int(diff)} {round_to_int(err)} {np.round(coef,2)}\n')
 
 if __name__ == "__main__":
     main()
